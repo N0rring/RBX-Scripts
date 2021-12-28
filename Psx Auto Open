@@ -12,7 +12,7 @@ Section:NewToggle("Egg", "", function(state)
 local args = {
     [1] = {
         [1] = "Egg of Many Gifts",
-        [2] = false
+        [2] = true
     }
 }
 
