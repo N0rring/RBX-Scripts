@@ -1,0 +1,77 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Anime Clickers")
+local Tab = Window:NewTab("AutoFarm")
+local Section = Tab:NewSection("Auto Click")
+Section:NewToggle("Auto Click", "", function(state)
+    if state then 
+        getgenv().AutoClick = true 
+        while getgenv().AutoClick == true do 
+            
+local args = {
+    [1] = false,
+    [2] = "Clicker!"
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClickRemote:FireServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoClick = false 
+    print("Toggle off")
+    end
+end)
+
+
+local Tab = Window:NewTab("AutoEgg")
+local Section = Tab:NewSection("Narmekian Star")
+Section:NewToggle("Narmekian Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Narmekian Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+
+local Tab = Window:NewTab("AutoRebirth")
+local Section = Tab:NewSection("Auto Rebirth")
+Section:NewToggle("500M Rebirth", "", function(state)
+    if state then 
+        getgenv().AutoRebirth = true 
+        while getgenv().AutoRebirth == true do 
+
+local args = {
+    [1] = 26
+}
+
+game:GetService("ReplicatedStorage").Remotes.RebirthRemote:FireServer(unpack(args))
+
+
+
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoRebirth = false 
+    print("Toggle Off")
+    end
+end)
+
+local Tab = Window:NewTab("Info")
+local Section = Tab:NewSection("Made By Norring :)")
+
+
+            
