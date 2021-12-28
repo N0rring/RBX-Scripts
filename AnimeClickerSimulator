@@ -24,6 +24,138 @@ end)
 
 
 local Tab = Window:NewTab("AutoEgg")
+local Section = Tab:NewSection("Pirate Star")
+Section:NewToggle("Pirate Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Pirate Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+--------------------------------------------
+local Section = Tab:NewSection("Slayer Star")
+Section:NewToggle("Slayer Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Slayer Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+--------------------------------------------
+local Section = Tab:NewSection("Slayer Star")
+Section:NewToggle("Slayer Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Slayer Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+------------------------------------------------
+local Section = Tab:NewSection("Nine Tailed Star")
+Section:NewToggle("Nine Tailed Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Nine Tailed Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+------------------------------------------------
+local Section = Tab:NewSection("Spirit Star")
+Section:NewToggle("Spirit Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Spirit Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+------------------------------------------------
+local Section = Tab:NewSection("Walled Star")
+Section:NewToggle("Walled Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
+
+local args = {
+    [1] = "Walled Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+------------------------------------------------
 local Section = Tab:NewSection("Narmekian Star")
 Section:NewToggle("Narmekian Star", "", function(state)
     if state then 
@@ -45,6 +177,9 @@ else
     print("Toggle Off")
     end
 end)
+------------------------------------------------
+
+
 
 local Tab = Window:NewTab("AutoRebirth")
 local Section = Tab:NewSection("Auto Rebirth")
