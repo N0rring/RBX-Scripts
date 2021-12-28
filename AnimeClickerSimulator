@@ -178,7 +178,28 @@ else
     end
 end)
 ------------------------------------------------
+local Section = Tab:NewSection("1M Star")
+Section:NewToggle("1M Star", "", function(state)
+    if state then 
+        getgenv().AutoOpen = true 
+        while getgenv().AutoOpen == true do 
 
+local args = {
+    [1] = "1M Star",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(unpack(args))
+wait()
+end 
+print("Toggle On")
+else 
+    getgenv().AutoOpen = false 
+    print("Toggle Off")
+    end
+end)
+------------------------------------------------
 
 
 local Tab = Window:NewTab("AutoRebirth")
